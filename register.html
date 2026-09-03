@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Register</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<div class="register-container">
+
+    <h2>Create Account 🌸</h2>
+
+    <form id="registerForm">
+
+        <div class="input-group">
+            <label>Name</label>
+            <input type="text" required>
+        </div>
+
+        <div class="input-group">
+            <label>Gender</label>
+            <select required>
+                <option>Select Gender</option>
+                <option>Female</option>
+                <option>Male</option>
+            </select>
+        </div>
+
+        <div class="input-group">
+            <label>Date of Birth</label>
+            <input type="date" required>
+        </div>
+
+        <div class="input-group">
+            <label>Email</label>
+            <input type="email" required>
+        </div>
+
+        <div class="input-group">
+            <label>Password</label>
+            <input type="password" required>
+        </div>
+
+        <button type="submit" class="register-btn">
+            Register ✨
+        </button>
+
+    </form>
+
+</div>
+
+<!-- ✅ THIS IS IMPORTANT PART -->
+<script>
+
+document.getElementById("registerForm").addEventListener("submit", function(event) {
+
+    event.preventDefault(); // stops page refresh
+
+    alert("Registration Successful 🎉");
+
+    // redirect to login page
+    window.location.href = "login.html";
+
+});
+
+</script>
+
+</body>
+</html>

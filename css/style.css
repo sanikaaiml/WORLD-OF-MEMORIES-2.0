@@ -1,0 +1,368 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+
+    background: linear-gradient(
+        135deg,
+        #ffd6e7,
+        #e3d7ff,
+        #d6f5ff,
+        #fff3c7
+    );
+
+    min-height: 100vh;
+}
+
+/* Navbar */
+
+.navbar {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px 60px;
+}
+
+.logo {
+
+    font-size: 24px;
+    font-weight: 600;
+    color: #ff4fa3;
+}
+
+.nav-buttons a {
+
+    text-decoration: none;
+    padding: 10px 25px;
+    border-radius: 25px;
+    margin-left: 10px;
+    font-weight: 500;
+}
+
+.btn {
+
+    background: #ff6ec7;
+    color: white;
+}
+
+.login {
+
+    background: #7bdcff;
+}
+
+/* Hero Section */
+
+.hero {
+
+    text-align: center;
+    padding: 120px 20px;
+}
+
+.hero h1 {
+
+    font-size: 60px;
+    color: #ff4fa3;
+}
+
+.hero p {
+
+    font-size: 20px;
+    margin-top: 20px;
+    color: #444;
+}
+
+.start-btn {
+
+    display: inline-block;
+    margin-top: 40px;
+    padding: 15px 40px;
+
+    background: #ff6ec7;
+    color: white;
+
+    border-radius: 40px;
+    text-decoration: none;
+    font-size: 18px;
+
+    transition: 0.3s;
+}
+
+.start-btn:hover {
+
+    transform: scale(1.1);
+}
+
+/* Categories */
+
+.categories {
+
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.categories h2 {
+
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+
+.cards {
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+
+    padding: 0 40px;
+}
+
+.card {
+
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+
+    transition: 0.3s;
+}
+
+.card:hover {
+
+    transform: translateY(-10px);
+}
+
+.card h3 {
+
+    font-size: 24px;
+}
+
+.card p {
+
+    margin-top: 10px;
+    color: #666;
+}
+
+/* Floating hearts */
+
+.hearts span {
+
+    position: fixed;
+    bottom: -50px;
+
+    font-size: 20px;
+
+    animation: floatHearts 10s linear infinite;
+}
+
+.hearts span:nth-child(1) {
+
+    left: 10%;
+    animation-duration: 8s;
+}
+
+.hearts span:nth-child(2) {
+
+    left: 25%;
+    animation-duration: 10s;
+}
+
+.hearts span:nth-child(3) {
+
+    left: 50%;
+    animation-duration: 7s;
+}
+
+.hearts span:nth-child(4) {
+
+    left: 70%;
+    animation-duration: 9s;
+}
+
+.hearts span:nth-child(5) {
+
+    left: 90%;
+    animation-duration: 11s;
+}
+
+@keyframes floatHearts {
+
+    0% {
+
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    100% {
+
+        transform: translateY(-1000px);
+        opacity: 0;
+    }
+
+}
+
+/* Footer */
+
+footer {
+
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+
+    color: #555;
+}
+
+
+/* REGISTER PAGE */
+
+.register-container {
+
+    width: 400px;
+    margin: auto;
+
+    margin-top: 80px;
+
+    background: white;
+
+    padding: 40px;
+
+    border-radius: 20px;
+
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+
+    text-align: center;
+
+}
+
+.register-container h2 {
+
+    color: #ff4fa3;
+    margin-bottom: 25px;
+
+}
+
+.input-group {
+
+    text-align: left;
+    margin-bottom: 15px;
+
+}
+
+.input-group label {
+
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+
+}
+
+.input-group input,
+.input-group select {
+
+    width: 100%;
+    padding: 10px;
+
+    border-radius: 10px;
+    border: 1px solid #ddd;
+
+    font-size: 14px;
+
+}
+
+.register-btn {
+
+    width: 100%;
+
+    padding: 12px;
+
+    border: none;
+
+    border-radius: 25px;
+
+    background: #ff6ec7;
+
+    color: white;
+
+    font-size: 16px;
+
+    margin-top: 15px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+
+}
+
+.register-btn:hover {
+
+    transform: scale(1.05);
+
+    background: #ff3aa5;
+
+}
+
+
+/* LOGIN PAGE */
+
+.login-container {
+
+    width: 350px;
+    margin: auto;
+
+    margin-top: 120px;
+
+    background: white;
+
+    padding: 40px;
+
+    border-radius: 20px;
+
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+
+    text-align: center;
+
+}
+
+.login-container h2 {
+
+    color: #ff4fa3;
+    margin-bottom: 25px;
+
+}
+
+.login-btn {
+
+    width: 100%;
+
+    padding: 12px;
+
+    border: none;
+
+    border-radius: 25px;
+
+    background: #7bdcff;
+
+    color: white;
+
+    font-size: 16px;
+
+    margin-top: 20px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+
+}
+
+.login-btn:hover {
+
+    transform: scale(1.05);
+
+    background: #52c6f5;
+
+}

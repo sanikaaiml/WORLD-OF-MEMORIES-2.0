@@ -1,0 +1,2 @@
+# WORLD OF MEMORIES 2.0
+World of Memories  World of Memories is an AI-powered web application designed to help users preserve, relive, and creatively recreate their special memories. Users can create digital memories by adding an event, description, emotion, date, and optional photograph. The application stores these memories in a personalized timeline and generates an AI-inspired story based on the user’s memory.
